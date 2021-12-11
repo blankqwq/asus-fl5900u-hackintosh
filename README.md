@@ -8,7 +8,7 @@
 
 ## MAC OS Version
 
-- Big Sur 11.0 - 11.6 (All versions are supported!)
+- Big Sur 11.0 - 11.6.1 (All versions are supported!)
 
 ## Laptop Specifications
 
