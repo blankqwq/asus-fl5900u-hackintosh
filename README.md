@@ -80,5 +80,7 @@ Default language in recovery has changed to English,clean NVRAM to let it work!
 
 
 ## Thanks
+
 - 感谢以下项目的作者
-[rjm521'](https://github.com/rjm521/asus-fl5900u-hackintosh-oc)
+[rjm521](https://github.com/rjm521/asus-fl5900u-hackintosh-oc)
+[hjh70526](https://github.com/hjh70526/asus-fl5900u-hackintosh-oc/)
