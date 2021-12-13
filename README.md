@@ -8,7 +8,7 @@
 
 ## MAC OS Version
 
-- Big Sur 11.0 - 11.6.1 (All versions are supported!)
+- Big Sur 11.0 - 12.0.1 (All versions are supported!)
 
 ## Laptop Specifications
 
@@ -28,7 +28,8 @@
 
 For more details about my laptop, please see `laptop-config-list.txt` file in this repo.
 
-
+Intel network (config-intel.plist)
+Bcm (config.plist)
 ## Warning
 My English isn's good,so I will completely use Chinese in some advance settings and supports.
 Default language in recovery has changed to English,clean NVRAM to let it work!
