@@ -10,6 +10,8 @@
 
 - Big Sur 11.0 - 12.0.1 (All versions are supported!)
 
+![image](./images/monterey.png)
+
 ## Laptop Specifications
 
 | Name              | Specifications                                               |
@@ -18,7 +20,7 @@
 | Memory            | 4+8 GB DDR4 2133 Mhz                                         |
 | Storage           | SSD 128G                                                     |
 | Video             | Integrated Intel HD 620 + NVIDIA 940MX                       |
-| Wi-Fi + Bluetooth | Intel 8260(bluetooth&&wifi ok) || Bcm 943224(Airdrop ok)     |
+| Wi-Fi + Bluetooth | Bcm 943224(Airdrop ok) or Intel 8260(bluetooth&&wifi ok) or  |
 | Ethernet          | Realtek RTL8111                                              |
 | Audio             | Realtek ALC255                                               |
 | Touchpad          | ELAN 1000 I2C Interface                                      |
