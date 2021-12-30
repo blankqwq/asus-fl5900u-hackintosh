@@ -10,6 +10,8 @@
 
 - Big Sur 11.0 - 12.0.1 (All versions are supported!)
 
+PS: 11.0 + 需要替换intel网卡驱动(11/12的驱动版本互不兼容，虽然能进系统，但是时间非常长)
+
 ![image](./images/monterey.png)
 
 ## Laptop Specifications
