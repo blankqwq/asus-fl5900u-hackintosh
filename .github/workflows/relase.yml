@@ -1,0 +1,46 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+    release-publish:
+        name: Publish release 
+        runs-on: macos-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v2
+
+          - run: mkdir output
+          - run: mkdir temp
+          - run: echo "TAG_VER=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+          - name: Make Artifacts Intel
+            env:
+              REPOSITORY_NAME: ${{ github.event.repository.name }}
+            run: rm -rf temp/*  && rsync  -av --exclude 'temp' --exclude 'images'  --exclude 'output' ./* ./temp && \
+                   mv -f ./temp/EFI/OC/config-intel8260.plist ./temp/EFI/OC/config.plist   && cd temp \
+                   zip --exclude '*.git*' --exclude '*.github*' --exclude '*output*' -r -X "output/${REPOSITORY_NAME}-${TAG_VER}-intel.zip" . 
+
+          - name: Make Artifacts All
+            env:
+              REPOSITORY_NAME: ${{ github.event.repository.name }}
+            run: rm -rf temp/* &&  rsync  -av --exclude 'temp' --exclude 'images' --exclude 'output' ./* ./temp && \
+                 cd temp &&  zip --exclude '*.git*' --exclude '*.github*' --exclude '*output*' -r -X "output/${REPOSITORY_NAME}-${TAG_VER}.zip" . 
+
+          - run: ls -al output/
+
+          - name: Upload to Artifacts
+            uses: actions/upload-artifact@v2
+            with:
+              name: Artifacts
+              path: output/*.zip
+
+          - name: Publish release
+            uses: svenstaro/upload-release-action@v2
+            with:
+              repo_token: ${{ secrets.GITHUB_TOKEN }}
+              file: output/*.zip
+              tag: ${{ github.ref }}
+              file_glob: true
