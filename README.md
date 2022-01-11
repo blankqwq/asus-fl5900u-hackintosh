@@ -6,11 +6,19 @@
 
 ## MAC OS Version
 
-- Big Sur 11.0 - 12.0.1 (All versions are supported!)
+- Big Sur 12.01~ (All versions are supported!)
 
 PS: 11.0 + 需要替换intel网卡驱动(11/12的驱动版本互不兼容，虽然能进系统，但是时间非常长)
 
+[Intel网卡驱动下载地址](https://github.com/OpenIntelWireless/itlwm) 选择对应版本进行下载，然后替换Kext目录下的同名文件
+
 ![image](./images/monterey.png)
+
+- 默认版本为Brcm版本
+
+Intel network (config-intel.plist)
+Bcm (config.plist)
+[EFI下载地址](https://github.com/blankqwq/asus-fl5900u-hackintosh-oc/releases)
 
 ## Laptop Specifications
 
@@ -28,16 +36,7 @@ PS: 11.0 + 需要替换intel网卡驱动(11/12的驱动版本互不兼容，虽�
 | Screen Resolution | 1920 x 1080                                                  |
 | Others            | 1x Card Reader, 1x WebCam, 1x VGA Port, 1x HDMI, 1x Combo Audio Jack, 1x USB 2.0, 1x USB 3.0 Type A, 1x USB 3.0 Type C, 1x Optical Drive |
 
-For more details about my laptop, please see `laptop-config-list.txt` file in this repo.
-
-Intel network (config-intel.plist)
-Bcm (config.plist)
-## Warning
-My English isn's good,so I will completely use Chinese in some advance settings and supports.
-Default language in recovery has changed to English,clean NVRAM to let it work!
-
 ## What Works 
-
 
 ✅ Intel HD 620
 
@@ -81,9 +80,9 @@ Default language in recovery has changed to English,clean NVRAM to let it work!
 
 ❌ NVIDIA GeForce 940MX (Optimus - impossible to get working at the moment)
 
-
 ## Thanks
 
-- 感谢以下项目的作者
+- 感谢以下项目的作者/团队
 [rjm521](https://github.com/rjm521/asus-fl5900u-hackintosh-oc)
 [hjh70526](https://github.com/hjh70526/asus-fl5900u-hackintosh-oc/)
+[OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)
