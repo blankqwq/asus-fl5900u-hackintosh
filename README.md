@@ -1,10 +1,8 @@
 # asus-fl5900u-hackintosh-oc
 
-
-
 ## OpenCore Version
 
-- 0.7.6
+- 0.7.7
 
 ## MAC OS Version
 
