@@ -19,15 +19,12 @@ jobs:
           - name: Make Artifacts Intel
             env:
               REPOSITORY_NAME: ${{ github.event.repository.name }}
-            run: rm -rf temp/*  && rsync  -av --exclude 'temp' --exclude 'images'  --exclude 'output' ./* ./temp && \
-                   mv -f ./temp/EFI/OC/config-intel8260.plist ./temp/EFI/OC/config.plist   && cd temp \
-                   zip --exclude '*.git*' --exclude '*.github*' --exclude '*output*' -r -X "output/${REPOSITORY_NAME}-${TAG_VER}-intel.zip" . 
+            run: rm -rf temp/*  && rsync  -av --exclude 'temp' --exclude 'images'  --exclude 'output' ./* ./temp && mv -f ./temp/EFI/OC/config-intel8260.plist ./temp/EFI/OC/config.plist && cd temp && zip --exclude '*.git*' --exclude '*.github*' --exclude '*output*' -r -X "../output/${REPOSITORY_NAME}-${TAG_VER}-intel.zip" . && cd ..
 
           - name: Make Artifacts All
             env:
               REPOSITORY_NAME: ${{ github.event.repository.name }}
-            run: rm -rf temp/* &&  rsync  -av --exclude 'temp' --exclude 'images' --exclude 'output' ./* ./temp && \
-                 cd temp &&  zip --exclude '*.git*' --exclude '*.github*' --exclude '*output*' -r -X "output/${REPOSITORY_NAME}-${TAG_VER}.zip" . 
+            run: rm -rf temp/* &&  rsync  -av --exclude 'temp' --exclude 'images' --exclude 'output' ./* ./temp && cd temp &&  zip --exclude '*.git*' --exclude '*.github*' --exclude '*output*' -r -X "../output/${REPOSITORY_NAME}-${TAG_VER}.zip" . && cd ..
 
           - run: ls -al output/
 
