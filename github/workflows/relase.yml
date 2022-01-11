@@ -1,0 +1,28 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+    release-publish:
+        name: Publish release 
+        runs-on: ubuntu-lastest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v2
+
+          - name: Make Artifacts
+            env:
+              REPOSITORY_NAME: ${{ github.event.repository.name }}
+              TAG_VER: ${{ github.ref }}
+            run: mkdir output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${REPOSITORY_NAME}-${TAG_VER}.zip" .
+              
+          - name: Publish release
+            uses: softprops/action-gh-release@v1
+            with:
+              repo_token: ${{ secrets.GITHUB_TOKEN }}
+              file: output/*.zip
+              tag: ${{ github.ref }}
+              file_glob: true
