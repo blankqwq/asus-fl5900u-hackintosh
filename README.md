@@ -6,7 +6,7 @@
 
 ## MAC OS Version
 
-- Big Sur 12.01~12.1 (All versions are supported!)
+- Big Sur 12.01~12.2 (All versions are supported!)
 
 PS: 11.0 + 需要替换intel网卡驱动(11/12的驱动版本互不兼容，虽然能进系统，但是时间非常长,默认版本为当前版本驱动)
 
