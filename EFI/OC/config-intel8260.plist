@@ -42,7 +42,7 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Path</key>
                     <string>SSDT-PMC.aml</string>
                 </dict>
@@ -390,7 +390,7 @@
                 <key>NormalizeHeaders</key>
                 <false/>
                 <key>RebaseRegions</key>
-                <true/>
+                <false/>
                 <key>ResetHwSig</key>
                 <false/>
                 <key>ResetLogoStatus</key>
