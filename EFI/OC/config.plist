@@ -1152,7 +1152,7 @@
                     <key>Comment</key>
                     <string>V1.0.3</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/NoTouchID</string>
                     <key>MaxKernel</key>
@@ -1725,9 +1725,9 @@
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>1541</integer>
+                <integer>0</integer>
                 <key>ROM</key>
-                <data>ESIzRFVm</data>
+                <data>buMN6/FO</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -1737,7 +1737,7 @@
                 <key>SystemSerialNumber</key>
                 <string>C02TV0J1HV2N</string>
                 <key>SystemUUID</key>
-                <string>09E5FE54-6E0C-4665-9E50-F86B15ADEABC</string>
+                <string>AEB4F426-6D5A-438C-80DB-154CF4EB399B</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
