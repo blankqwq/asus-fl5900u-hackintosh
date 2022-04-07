@@ -450,7 +450,7 @@
             <key>Quirks</key>
             <dict>
                 <key>AllowRelocationBlock</key>
-                <false/>
+                <true/>
                 <key>AvoidRuntimeDefrag</key>
                 <true/>
                 <key>DevirtualiseMmio</key>
@@ -1721,7 +1721,7 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C02724701CDHRPCAD</string>
+                <string>C02736500CDJ1JH8C</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1733,11 +1733,11 @@
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro14,2</string>
+                <string>MacBookPro14,3</string>
                 <key>SystemSerialNumber</key>
-                <string>C02TV0J1HV2G</string>
+                <string>C02VCPYTHTD5</string>
                 <key>SystemUUID</key>
-                <string>3A031D8B-DA6A-4288-A8CC-CE07852F9588</string>
+                <string>5E69D560-CE41-4FFF-B8B5-8D43D6D26E24</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>

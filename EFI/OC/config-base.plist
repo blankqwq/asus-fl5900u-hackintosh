@@ -450,7 +450,7 @@
             <key>Quirks</key>
             <dict>
                 <key>AllowRelocationBlock</key>
-                <false/>
+                <true/>
                 <key>AvoidRuntimeDefrag</key>
                 <true/>
                 <key>DevirtualiseMmio</key>
@@ -842,6 +842,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>CpuTscSync.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.7</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/CpuTscSync</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>CPUFriend.kext</string>
                     <key>Comment</key>
                     <string>V1.2.4</string>
@@ -867,24 +885,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string></string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>CpuTscSync.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.7</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/CpuTscSync</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -932,6 +932,78 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>USBInjectAll.kext</string>
+                    <key>Comment</key>
+                    <string>V0.7.8</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/USBInjectAll</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>USBPortsI.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>USBPorts.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>BlueToolFixup.kext</string>
+                    <key>Comment</key>
+                    <string>V2.6.1</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/BlueToolFixup</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string>21.00.0</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>BrcmFirmwareData.kext</string>
                     <key>Comment</key>
                     <string>V2.6.1</string>
@@ -961,96 +1033,6 @@
                     <string></string>
                     <key>MinKernel</key>
                     <string>21.00.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelBluetoothFirmware.kext</string>
-                    <key>Comment</key>
-                    <string>V2.1.0</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string>21.00.00</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelBluetoothInjector.kext</string>
-                    <key>Comment</key>
-                    <string>V2.1.0</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string></string>
-                    <key>MaxKernel</key>
-                    <string>20.99.99</string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>BlueToolFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V2.6.1</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/BlueToolFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string>21.00.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>AirportItlwm.kext</string>
-                    <key>Comment</key>
-                    <string>V2.1.0</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirportItlwm</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>USBInjectAll.kext</string>
-                    <key>Comment</key>
-                    <string>V0.7.8</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/USBInjectAll</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
@@ -1094,6 +1076,60 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>AirportItlwm.kext</string>
+                    <key>Comment</key>
+                    <string>V2.1.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>IntelBluetoothInjector.kext</string>
+                    <key>Comment</key>
+                    <string>V2.1.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string>20.99.99</string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>IntelBluetoothFirmware.kext</string>
+                    <key>Comment</key>
+                    <string>V2.1.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string>21.00.00</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>SMCLightSensor.kext</string>
                     <key>Comment</key>
                     <string>V1.2.9 | Light Sensor</string>
@@ -1116,7 +1152,7 @@
                     <key>Comment</key>
                     <string>V1.0.3</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/NoTouchID</string>
                     <key>MaxKernel</key>
@@ -1685,23 +1721,23 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C02724701CDHRPCAD</string>
+                <string>C027184014NJ1JHCB</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>1541</integer>
+                <integer>0</integer>
                 <key>ROM</key>
-                <data>zDN6M9hS</data>
+                <data>65KkTR22</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro14,2</string>
+                <string>MacBookPro14,3</string>
                 <key>SystemSerialNumber</key>
-                <string>C02TV0J1HV2G</string>
+                <string>C02TN0MQHTD5</string>
                 <key>SystemUUID</key>
-                <string>3A031D8B-DA6A-4288-A8CC-CE07852F9588</string>
+                <string>CECF2F1E-DEB4-4DEC-B737-C81BAB02BE06</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1982,7 +2018,7 @@
                 <key>DisableSecurityPolicy</key>
                 <false/>
                 <key>EnableVectorAcceleration</key>
-                <true/>
+                <false/>
                 <key>EnableVmx</key>
                 <false/>
                 <key>ExitBootServicesDelay</key>
@@ -1994,7 +2030,7 @@
                 <key>IgnoreInvalidFlexRatio</key>
                 <false/>
                 <key>ReleaseUsbOwnership</key>
-                <true/>
+                <false/>
                 <key>ReloadOptionRoms</key>
                 <false/>
                 <key>RequestBootVarRouting</key>

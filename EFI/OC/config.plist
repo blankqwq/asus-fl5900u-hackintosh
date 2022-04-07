@@ -450,7 +450,7 @@
             <key>Quirks</key>
             <dict>
                 <key>AllowRelocationBlock</key>
-                <false/>
+                <true/>
                 <key>AvoidRuntimeDefrag</key>
                 <true/>
                 <key>DevirtualiseMmio</key>
@@ -1008,7 +1008,7 @@
                     <key>Comment</key>
                     <string>V2.6.1</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BrcmFirmwareData</string>
                     <key>MaxKernel</key>
@@ -1026,7 +1026,7 @@
                     <key>Comment</key>
                     <string>V2.6.1</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BrcmPatchRAM3</string>
                     <key>MaxKernel</key>
@@ -1721,23 +1721,23 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C02724701CDHRPCAD</string>
+                <string>C027184014NJ1JHCB</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>buMN6/FO</data>
+                <data>65KkTR22</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro14,2</string>
+                <string>MacBookPro14,3</string>
                 <key>SystemSerialNumber</key>
-                <string>C02TV0J1HV2N</string>
+                <string>C02TN0MQHTD5</string>
                 <key>SystemUUID</key>
-                <string>AEB4F426-6D5A-438C-80DB-154CF4EB399B</string>
+                <string>CECF2F1E-DEB4-4DEC-B737-C81BAB02BE06</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -2018,7 +2018,7 @@
                 <key>DisableSecurityPolicy</key>
                 <false/>
                 <key>EnableVectorAcceleration</key>
-                <true/>
+                <false/>
                 <key>EnableVmx</key>
                 <false/>
                 <key>ExitBootServicesDelay</key>
@@ -2030,7 +2030,7 @@
                 <key>IgnoreInvalidFlexRatio</key>
                 <false/>
                 <key>ReleaseUsbOwnership</key>
-                <true/>
+                <false/>
                 <key>ReloadOptionRoms</key>
                 <false/>
                 <key>RequestBootVarRouting</key>
