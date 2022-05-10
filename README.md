@@ -2,15 +2,26 @@
 
 ## OpenCore Version
 
-- 0.7.7
+- 0.8.0
 
-## MAC OS Version
+bios版本`317`
+需要操作以下内容
+```
+aes-ni关闭
+fastboot关闭
+csm关闭
+secure boot关闭
+```
 
-- Big Sur 12.01~12.2 (All versions are supported!)
+- 由于USB定制问题，所以建议使用USBInjectAll.kext
 
 PS: 11.0 + 需要替换intel网卡驱动(11/12的驱动版本互不兼容，虽然能进系统，但是时间非常长,默认版本为当前版本驱动)
 
 [Intel网卡驱动下载地址](https://github.com/OpenIntelWireless/itlwm) 选择对应版本进行下载，然后替换Kext目录下的同名文件
+
+## MAC OS Version
+
+- Big Sur 12.01~12.3.1 (All versions are supported!)
 
 ![image](./images/monterey.png)
 
