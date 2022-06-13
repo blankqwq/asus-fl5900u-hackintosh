@@ -20,7 +20,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-PLUG-DRTNIA.aml</string>
+                    <string>SSDT-PLUG.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -36,13 +36,21 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-PNLF.aml</string>
+                    <string>SSDT-GPI0.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>Path</key>
+                    <string>SSDT-PNLF.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <false/>
                     <key>Path</key>
                     <string>SSDT-XOSI.aml</string>
                 </dict>
@@ -60,6 +68,14 @@
                     <key>Enabled</key>
                     <false/>
                     <key>Path</key>
+                    <string>SSDT-PLUG-DRTNIA.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
                     <string>SSDT-RTC.aml</string>
                 </dict>
                 <dict>
@@ -69,14 +85,6 @@
                     <false/>
                     <key>Path</key>
                     <string>SSDT-SBUS-MCHC.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-PLUG.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -400,7 +408,7 @@
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Find</key>
                     <data>X09TSQ==</data>
                     <key>Limit</key>
@@ -555,6 +563,10 @@
                     <key>framebuffer-con1-alldata</key>
                     <data>AQUJAAAIAACHAQAA/wQKAAAIAACHAQAA</data>
                     <key>framebuffer-con1-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con2-alldata</key>
+                    <data>AQUKAAAAgAAAhwEAAAAwYKAAAAQAAAhwEAAA/wAAAAAQAAAAIAAAAA==</data>
+                    <key>framebuffer-con2-enable</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-fbmem</key>
                     <data>AACQAA==</data>
@@ -711,7 +723,7 @@
                     <key>Comment</key>
                     <string>V1.2.5</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/CPUFriend</string>
                     <key>MaxKernel</key>
@@ -1427,11 +1439,11 @@
             <key>Debug</key>
             <dict>
                 <key>AppleDebug</key>
-                <false/>
+                <true/>
                 <key>ApplePanic</key>
-                <false/>
+                <true/>
                 <key>DisableWatchDog</key>
-                <false/>
+                <true/>
                 <key>DisplayDelay</key>
                 <integer>0</integer>
                 <key>DisplayLevel</key>
@@ -1441,7 +1453,7 @@
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
-                <integer>83</integer>
+                <integer>67</integer>
             </dict>
             <key>Entries</key>
             <array/>
@@ -1692,7 +1704,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>OpenRuntime.efi</string>
+                    <string>HfsPlus.efi</string>
                 </dict>
                 <dict>
                     <key>Arguments</key>
@@ -1702,7 +1714,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>HfsPlus.efi</string>
+                    <string>OpenRuntime.efi</string>
                 </dict>
                 <dict>
                     <key>Arguments</key>
